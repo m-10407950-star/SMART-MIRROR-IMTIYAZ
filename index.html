@@ -1,0 +1,19 @@
+<script>
+const hari = ["Ahad","Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu"];
+
+const surahHarian = {
+  "Ahad": "Surah As-Sajdah",
+  "Isnin": "Surah Al-Kahfi",
+  "Selasa": "Surah Yasin",
+  "Rabu": "Surah Ar-Rahman",
+  "Khamis": "Surah Al-Waqiah",
+  "Jumaat": "Surah Al-Kahfi",
+  "Sabtu": "Surah Al-Mulk"
+};
+
+let today = new Date();
+let namaHari = hari[today.getDay()];
+
+document.getElementById("hari").innerHTML = "Hari ini: " + namaHari;
+document.getElementById("surah").innerHTML = "Surah Harian: " + surahHarian[namaHari];
+</script>
